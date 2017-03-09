@@ -3,8 +3,8 @@ package oo.abstraction;
 public class CarTester {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Car car = new Car("Totyal",1800);
+		System.out.println(car.cc);
 	}
 
 }
