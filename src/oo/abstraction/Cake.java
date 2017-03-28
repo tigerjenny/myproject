@@ -5,6 +5,7 @@ public class Cake {
 	int heat;
 	int price;
 	int cost;
+	int id;
 
 	public Cake(String name, int heat, int price, int cost) {
 		this.name = name; // 名稱
