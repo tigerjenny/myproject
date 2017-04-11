@@ -7,7 +7,7 @@ public class InvoiceHomework {
 
 	public static void main(String[] args) {
 		// 本次開獎號碼 331 821 886 554 讓使用者輸入發票號碼（長度不限）判斷尾數3位是否中獎(用Arraylist)
-		System.out.println("請輸入發票號碼：");
+		/*System.out.println("請輸入發票號碼：");
 		Scanner scanner = new Scanner(System.in);
 		String n = scanner.nextLine();
 		String s = "331";
@@ -21,7 +21,7 @@ public class InvoiceHomework {
 		}else{
 			System.out.println("下次加油～～");
 		}
-		
+		*/
 		
 		
 		ArrayList<String> a = new ArrayList();
@@ -29,9 +29,17 @@ public class InvoiceHomework {
 		a.add("821");
 		a.add("886");
 		a.add("554");
-		//System.out.println("請輸入發票號碼：(至少末3碼)");
-		//Scanner scanner = new Scanner(System.in);
-		//String num = scanner.nextLine();
+		System.out.println("請輸入發票號碼：");
+		Scanner scanner = new Scanner(System.in);
+		String num = scanner.nextLine();
+		System.out.println(num.length());
+		String sub = num.substring(num.length()-3);
+		System.out.println(sub);
+		if(a.equals(sub)){
+			System.out.println("恭喜中獎！！");
+		}else{
+			System.out.println("下次加油～～");
+		}
 		
 	}
 
