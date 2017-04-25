@@ -7,6 +7,11 @@ public class Student {
 	int math;
 	int chinese;
 	static int pass = 60;
+	static{
+		System.out.println("STATIC!!");
+		//System.out.println(english);  =>這行會出錯，因為此行會先執行，english還沒產生。
+		System.out.println(pass); 		//因為pass也是static值，所以此行可以產生成功。
+	}									//會在tester裡先執行，在還沒有物件產生時，就會執行出來。
 
 	// 右鍵source => generate constructor using field 可快速產生下面
 	/*public Student(int english, int math, int chinese) {

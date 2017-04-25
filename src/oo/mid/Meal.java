@@ -9,24 +9,32 @@ public class Meal {
 	int price;
 	String msg;
 	
-	public String Meal() {
+	public void meal() {
 		System.out.println("請輸入餐點號碼：");
 		Scanner s = new Scanner(System.in);
-		num = Integer.parseInt(s.nextLine());
-	
-		   if(num<0){
-			   msg="error";
+		String m = s.nextLine();
+		this.num = Integer.parseInt(m);
+		if(num<0){
+			   System.out.println("error");
 		   }else{
-			  msg = "點餐成功！"; 
+			   System.out.println("點餐成功！"); 
 		   }
-		return msg;
 	}
+	/*public String test(int num){
+		num = this.num;
+		if(num<0){
+			   this.msg="error";
+		   }else{
+			  this.msg = "點餐成功！"; 
+		   }
+		return this.msg;
+	}*/
 	public void addmeal() {
 		System.out.println("如果還要加點請按0:");
 		Scanner s = new Scanner(System.in);
 		int m = Integer.parseInt(s.nextLine());
-		if(m==0){
-			Meal();
+		if(m==0) {
+			meal();	
 		}else{
 			money();
 		}
