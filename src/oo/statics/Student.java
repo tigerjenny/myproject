@@ -2,7 +2,7 @@ package oo.statics;
 
 import java.util.Scanner;
 
-public class Student {
+public class Student {					//如果前面的public刪掉，則只有同一個package的class可以使用
 	int english;
 	int math;
 	int chinese;
@@ -35,7 +35,7 @@ public class Student {
 			return String.valueOf(score);
 		}
 	}
-	public Student(){
+	public Student(){						//如果前面的public刪掉，則只有同一個package的class可以使用
 		System.out.println("請輸入學生成績：\n 英文:");
 		Scanner scanner = new Scanner(System.in);
 		this.english  = Integer.parseInt(scanner.nextLine());

@@ -1,5 +1,7 @@
 package oo.mid;
 
+import oo.statics.Student;
+
 public class Ticket {
 	int id;
 	String name;
