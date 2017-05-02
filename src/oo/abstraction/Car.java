@@ -7,6 +7,9 @@ public class Car {
 	String name;
 	int status;
 	float milage; //屬性多名詞
+	public  Car() {
+		
+	}
 
 	public Car(String name, String brand) {
 		this(0 , name , brand);	//會去找有沒有相同的方法是要（整數，字串，字串）

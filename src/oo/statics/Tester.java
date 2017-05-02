@@ -1,5 +1,7 @@
 package oo.statics;
 
+import java.util.ArrayList;
+
 public class Tester {
 
 	public static void main(String[] args) {
@@ -10,9 +12,17 @@ public class Tester {
 		stu1.pass = 60;
 		stu1.print();
 		stu2.print();
-		GraduateStudent gtu = new GraduateStudent(66, 88, 74);
-		gtu.print();
-
+		GraduateStudent gstu = new GraduateStudent(66, 88, 74);
+		gstu.print();
+		//
+		ArrayList<Student> list = new ArrayList();
+		list.add(new Student(66, 77, 88));
+		list.add(new Student(33,55,80));
+		list.add(new GraduateStudent(66, 88, 74));
+		for(int i=0;i<list.size();i++){
+			Student stu = list.get(i);
+			stu.print();
+		}
 	}
 
 }

@@ -30,6 +30,10 @@ public class CarTester {
 
 		}
 		ABC abc = new ABC();
+		Truck tru = new Truck(4000, "haha", "yamaha", 8, 8000);
+		tru.setMileage(2000);
+		tru.addMilage(80);
+		System.out.println(tru.milage);
 	}
 
 }

@@ -8,6 +8,7 @@ public class GraduateStudent extends Student {
 		this.math = math;
 		this.chinese = chinese;
 	}
+	@Override						//可以幫忙撿查覆寫的方法名稱有沒有錯誤
 	public void print() {			//覆寫
 		System.out.println(getScore(english) + "\t" +
 				getScore(math) + "\t" + getScore(chinese)+"\t"+thesis);
