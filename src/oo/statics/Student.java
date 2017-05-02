@@ -13,6 +13,9 @@ public class Student {
 		System.out.println(pass); 		//因為pass也是static值，所以此行可以產生成功。
 	}									//會在tester裡先執行，在還沒有物件產生時，就會執行出來。
 
+	static {
+		System.out.println("Haha, enter the score!!");
+	}
 	// 右鍵source => generate constructor using field 可快速產生下面
 	/*public Student(int english, int math, int chinese) {
 		this.english = english;
