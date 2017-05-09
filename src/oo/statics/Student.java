@@ -11,7 +11,7 @@ import java.util.Scanner;
 		System.out.println("STATIC!!");
 		//System.out.println(english);  =>這行會出錯，因為此行會先執行，english還沒產生。
 		System.out.println(pass); 		//因為pass也是static值，所以此行可以產生成功。
-	}	//會在tester裡先執行，在還沒有物件產生時，就會執行出來。
+	}									//會在tester裡先執行，在還沒有物件產生時，就會執行出來。
 	
 	public  Student() {
 		//因為要被繼承，所以一定要有一個空的建構子
@@ -51,4 +51,14 @@ import java.util.Scanner;
 		scanner = new Scanner(System.in);
 		this.chinese = Integer.parseInt(scanner.nextLine());
 	}*/
-}
+	@Override
+	public String toString() {
+		return
+			"english:" + english + "\n"+
+			"chineses:" + chinese + "\n"+
+			"math:" + math ;
+	}
+ 
+ }
+ 
+ 
