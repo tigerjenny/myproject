@@ -12,8 +12,12 @@ public class Customer {
 		Scanner scanner = new Scanner(System.in);
 		this.pay  = Integer.parseInt(scanner.nextLine());
 		}
+	public void discount() {
+		discountpay = (int) (pay*1.0);
+	}
+	
 	public void show() {
-		System.out.println("消費金額："+ pay +"\t"+"折扣後："+pay+"\t"+"還原金:"+returnmoney);
+		System.out.println("消費金額："+ pay +"\t"+"折扣後："+discountpay+"\t"+"還原金:"+returnmoney);
 	}
 
 }

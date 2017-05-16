@@ -16,6 +16,7 @@ public class CountTester {
 		switch (n) {
 		case 1:
 			cus.enter();
+			cus.discount();
 			cus.show();
 			break;
 		case 2:

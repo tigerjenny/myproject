@@ -2,6 +2,7 @@ package oo.shopping;
 
 public class SilverCustomer extends Customer {
 	
+	@Override
 	public void discount() {
 		discountpay = (int) (pay*0.9);
 	}
