@@ -6,10 +6,10 @@ public class GoldenCustomer extends SilverCustomer {
 		discountpay= (int) (pay*0.9);
 		returnmoney = (int) (pay*0.05);
 	}
-	@Override
+	/*@Override
 	public void show(){
 		System.out.println("消費金額："+ pay +"\t"+"折扣後："+discountpay+"\t"+"還原金:"+returnmoney);
-	}
+	}*/
 
 
 }
