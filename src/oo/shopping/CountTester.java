@@ -16,18 +16,17 @@ public class CountTester {
 		switch (n) {
 		case 1:
 			cus.enter();
-			cus.discount();
 			cus.show();
 			break;
 		case 2:
 			silcus.enter();
-			silcus.discount();
-			silcus.show();
+			//silcus.discount();
+			//silcus.show();
 			break;
 		case 3:
 			godcus.enter();
-			godcus.discount();
-			godcus.show();
+			//godcus.discount();
+			//godcus.show();
 			break;
 		default:
 			System.out.println("wrong");
