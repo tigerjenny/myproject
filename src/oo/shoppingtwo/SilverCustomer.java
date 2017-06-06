@@ -1,6 +1,7 @@
-package oo.shopping2;
+package oo.shoppingtwo;
 
 public class SilverCustomer extends Customer {
+	float discount = 0.9f;
 
 	public SilverCustomer(int amount) {
 		super(amount);

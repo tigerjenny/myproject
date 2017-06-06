@@ -1,14 +1,13 @@
 package oo.shopping2;
 
-public class Customer {
+public abstract class Customer {
 	int amount;
+	float discount = 0.9f;
 
 	public Customer(int amount) {
 		this.amount = amount;
 	}
 
-	public void print() {
-		System.out.println(amount + "\t" + amount + "\t0");
-	}
+	public abstract void print();
 
 }

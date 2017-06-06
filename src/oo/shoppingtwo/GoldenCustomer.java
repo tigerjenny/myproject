@@ -1,6 +1,6 @@
-package oo.shopping2;
+package oo.shoppingtwo;
 
-public class GoldenCustomer extends Customer {
+public class GoldenCustomer extends SilverCustomer {
 	float returnmoney = 0.05f;
 
 	public GoldenCustomer(int amount) {
