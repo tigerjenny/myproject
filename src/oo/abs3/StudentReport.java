@@ -1,6 +1,6 @@
 package oo.abs3;					//實作
 
-public class StudentReport implements Report {   //implements後要加一個interface
+public class StudentReport implements Report {   //implements後要加一個interface，後面可以接多個介面
 
 	@Override
 	public void test() {
